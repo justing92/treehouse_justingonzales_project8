@@ -37,8 +37,8 @@ header {
 
 .avatar {
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     margin-right: 20px;
 }
 
@@ -52,13 +52,16 @@ h2, p {
 }
 
 h2 {
-    font-size: 12px;
+    font-size: 15px;
+    color: #414b52;
 }
 
 p {
-    font-size: 10px;
+    font-size: 12px;
     color: #a8acaf;
 }
+
+ /* Overlay and Modal */
 
 .overlay {
     position: absolute;
@@ -70,7 +73,8 @@ p {
 }
 
 .modal {
-    width: 375px;
+    width: 325px;
+    height: 400px;
     margin: 15% auto auto;
     position: relative;
     text-align: center;
@@ -89,4 +93,24 @@ p {
 
 .hidden {
     display: none;
+}
+
+.modal-content img {
+    margin-right: 0;
+    margin-bottom: 15px;
+    height: 125px;
+    width: 125px;
+}
+
+.modal-content p,
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+.modal-content p:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+.modal-content p:nth-of-type(3) {
+    margin-top: 25px;
 }
