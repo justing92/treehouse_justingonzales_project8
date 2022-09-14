@@ -40,7 +40,6 @@ function displayEmployees(employeeData) {
 function displayModal(index) {
     let { name, dob, phone, email, location: { city, street, state, postcode
     }, picture } = employees[index];
-    let street = employee.location.street;
 
     let date = new Date(dob.date);
 
@@ -52,7 +51,7 @@ function displayModal(index) {
             <p class="address">${city}</p>
             <hr />
             <p>${phone}</p>
-            <p class="address">${street}, ${postcode}</p>
+            <p class="address">${street.number} ${street.name}, ${postcode}</p>
             <p>Birthday:
             ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
         </div>
